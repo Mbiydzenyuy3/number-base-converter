@@ -4,10 +4,9 @@
 const UI = {
   inputBase: document.getElementById('numbase'),
   baseInput: document.getElementById ('options'),
-  
-  // baseFrom: document.getElementById('result'),
-  // baseTo: document.getElementById('resetbutton'),
-  // button: document.getElementById('btn'),
+  baseFrom: document.getElementById('result'),
+  baseTo: document.getElementById('resetbutton'),
+  button: document.getElementById('btn'),
 }
 
 UI.button.addEventListener ('click', (e) => {
