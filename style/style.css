@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 48%;
 }
 
 #container {
@@ -49,15 +50,24 @@ input {
   display: none;
 }
 
-.convertor,
-#options {
+p {
   width: 100%;
+  text-align: left;
+  padding: 0.5em;
+}
+
+#result {
+  width: 100%;
+  text-align: center;
+}
+
+#options {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   gap: 0.5em;
-  padding: 1em 0;
+  padding: 1em;
 }
 
 #btn {
