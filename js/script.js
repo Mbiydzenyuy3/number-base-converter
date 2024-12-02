@@ -3,10 +3,11 @@
 
 const UI = {
   inputBase: document.getElementById('numbase'),
+  baseInput: document.getElementById ('options'),
+  
   // baseFrom: document.getElementById('result'),
   // baseTo: document.getElementById('resetbutton'),
   // button: document.getElementById('btn'),
-  baseInput: document.getElementById ('options'),
 }
 
 UI.button.addEventListener ('click', (e) => {
