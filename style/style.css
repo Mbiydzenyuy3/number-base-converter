@@ -13,13 +13,6 @@ body {
   height: 100vh;
 }
 
-.convertor {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  width: 48%;
-}
-
 #container {
   width: 75%;
   margin: auto;
@@ -32,18 +25,15 @@ body {
   padding: 1em;
 }
 
-#text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
-}
-
 input {
   width: 100%;
   padding: 1em;
   outline: none;
+}
+
+.text,
+.convertor {
+  width: 50%;
 }
 
 #resetbutton {
@@ -62,6 +52,7 @@ p {
 }
 
 #options {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: left;
