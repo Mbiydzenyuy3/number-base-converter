@@ -3,24 +3,29 @@
 
 const UI = {
   inputBase: document.getElementById('numbase'),
-  baseInput: document.getElementById ('options'),
-  baseFrom: document.getElementById('result'),
-  baseTo: document.getElementById('resetbutton'),
-  button: document.getElementById('btn'),
+  baseInput: document.getElementById('options'),
+  result: document.getElementById('result'),
+  resetButton: document.getElementById('resetbutton'),
+  button: document.getElementById('btn')
 }
 
-UI.button.addEventListener ('click', (e) => {
-  e.preventDefault ()
-  const convertBase = parseInt(inputBase.value)
-  const baseInputNumber = parseInt(baseInput.value)
+UI.button.addEventListener('click', (e) => {
+  e.preventDefault()
+  const convertBase = parseInt(UI.inputBase.value)
+  const baseInputNumber = parseInt(UI.baseInput.value)
   if (isNaN(convertBase)) {
-    result.textContent = 'please enter a valid base number'
-    result.style.color = 'red'
+    UI.result.textContent = 'Please enter a valid base number'
+    UI.result.style.color = 'red'
     return
   }
+  const convertNumber = convertBase.toString(baseInputNumber)
+  UI.result.textContent = `${convertBase} to base ${baseInputNumber} is ${convertNumber}`
+  UI.result.style.color = 'green'
+})
 
-  const convertNumber = convertBase.toString (baseInputNumber)
-
-  result.textContent = `${convertBase} to base ${baseInputNumber} is ${convertNumber}`
-  result.style.color = 'green'
+UI.resetButton.addEventListener('click', () => {
+  UI.inputBase.value = ''
+  UI.baseInput.value = '2'
+  UI.result.textContent = ''
+  UI.result.style.color = 'white'
 })

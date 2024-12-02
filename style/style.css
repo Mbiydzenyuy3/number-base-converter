@@ -49,6 +49,7 @@ input {
   display: none;
 }
 
+.convertor,
 #options {
   width: 100%;
   display: flex;
@@ -56,6 +57,7 @@ input {
   align-items: center;
   justify-content: center;
   gap: 0.5em;
+  padding: 1em 0;
 }
 
 #btn {
